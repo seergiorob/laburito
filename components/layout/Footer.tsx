@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { BRAND } from '@/lib/constants'
 
 type FooterVariant = 'consumer' | 'provider'
@@ -16,10 +17,19 @@ export function Footer({ variant }: FooterProps) {
   return (
     <footer className="bg-[#1b1c1a] rounded-t-[2rem] mt-12">
       <div className="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 w-full max-w-7xl mx-auto">
-        <div className="flex flex-col gap-2">
-          <span className="font-black text-2xl font-display tracking-tighter text-white">
-            {BRAND.name}
-          </span>
+        <div className="flex flex-col gap-3">
+          <div className="flex items-center gap-2.5">
+            <Image
+              src="/logo-dark.svg"
+              alt="Laburito"
+              width={36}
+              height={36}
+              className="rounded-lg brightness-0 invert"
+            />
+            <span className="font-black text-2xl font-display tracking-tighter text-white">
+              {BRAND.name}
+            </span>
+          </div>
           <p className="text-gray-400 text-sm">{BRAND.copyright}. Hecho en Argentina con confianza.</p>
         </div>
 

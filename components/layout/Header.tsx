@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
@@ -27,11 +28,18 @@ export function Header({ variant }: HeaderProps) {
     <header className="fixed top-0 w-full z-50 glass-nav shadow-[0px_12px_32px_rgba(27,28,26,0.06)]">
       <nav className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-2xl font-black font-display tracking-tighter text-[#1b1c1a] hover:text-[#b22c00] transition-colors"
-        >
-          Laburito
+        <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
+          <Image
+            src="/logo.png"
+            alt="Laburito"
+            width={36}
+            height={36}
+            className="rounded-lg"
+            priority
+          />
+          <span className="text-xl font-black font-display tracking-tighter text-[#1b1c1a]">
+            Laburito
+          </span>
         </Link>
 
         {/* Desktop nav */}
