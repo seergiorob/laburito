@@ -66,7 +66,7 @@ export function HeroProvider() {
           </div>
 
           {/* Floating review card */}
-          <div className="absolute -bottom-10 -left-6 bg-white p-5 rounded-2xl shadow-2xl max-w-[260px] rotate-[-3deg] hover:rotate-0 transition-transform duration-500 hidden lg:block">
+          {/* <div className="absolute -bottom-10 -left-6 bg-white p-5 rounded-2xl shadow-2xl max-w-[260px] rotate-[-3deg] hover:rotate-0 transition-transform duration-500 hidden lg:block">
             <p className="text-sm italic font-medium text-[#1b1c1a] leading-relaxed">
               &ldquo;Desde que estoy en Laburito, llené los baches de mi semana.&rdquo;
             </p>
@@ -76,7 +76,7 @@ export function HeroProvider() {
               </div>
               <p className="text-xs font-bold text-[#5b413a]">— Marcelo P., Carpintero</p>
             </div>
-          </div>
+          </div> */}
         </FadeInOnScroll>
       </div>
     </section>
