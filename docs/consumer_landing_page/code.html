@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Laburito | Encontrá profesionales del hogar verificados</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary-fixed-variant": "#882000",
+                "on-primary-container": "#581100",
+                "outline": "#8f7068",
+                "primary-fixed": "#ffdbd1",
+                "on-secondary-container": "#444f84",
+                "background": "#faf9f5",
+                "primary-fixed-dim": "#ffb5a1",
+                "on-error-container": "#93000a",
+                "on-secondary-fixed": "#091649",
+                "surface-variant": "#e3e2df",
+                "tertiary": "#6b5b55",
+                "on-secondary-fixed-variant": "#384377",
+                "surface-container-high": "#e9e8e4",
+                "error-container": "#ffdad6",
+                "on-tertiary-fixed": "#251914",
+                "on-error": "#ffffff",
+                "surface": "#faf9f5",
+                "outline-variant": "#e3beb5",
+                "secondary-fixed-dim": "#b9c3ff",
+                "surface-dim": "#dbdad6",
+                "on-surface-variant": "#5b413a",
+                "tertiary-fixed": "#f4ded6",
+                "surface-tint": "#b22c00",
+                "surface-container-highest": "#e3e2df",
+                "tertiary-fixed-dim": "#d7c2bb",
+                "inverse-surface": "#30312e",
+                "on-secondary": "#ffffff",
+                "inverse-on-surface": "#f2f1ed",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed": "#3b0900",
+                "on-tertiary-fixed-variant": "#52443e",
+                "on-surface": "#1b1c1a",
+                "on-primary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "secondary-container": "#b9c3ff",
+                "inverse-primary": "#ffb5a1",
+                "primary": "#b22c00",
+                "error": "#ba1a1a",
+                "secondary": "#505b91",
+                "surface-container-low": "#f5f4f0",
+                "tertiary-container": "#a28f88",
+                "surface-bright": "#faf9f5",
+                "on-background": "#1b1c1a",
+                "surface-container": "#efeeea",
+                "secondary-fixed": "#dde1ff",
+                "on-tertiary-container": "#362924",
+                "primary-container": "#ff5c2e"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "1.5rem", // Overriding per UI pillars for primary items
+                "card": "1rem"
+            },
+            "fontFamily": {
+                "headline": ["Inter"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-no-border {
+            border: none !important;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #b22c00 0%, #ff5c2e 100%);
+        }
+        .glass-header {
+            background-color: rgba(250, 249, 245, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-header shadow-[0px_12px_32px_rgba(27,28,26,0.06)]">
+<nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-[900] text-[#1b1c1a] dark:text-[#faf9f5] tracking-tighter">
+                Laburito
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#1b1c1a] dark:text-[#faf9f5] font-medium hover:text-[#ff5c2e] transition-colors duration-300" href="#">Buscá un experto</a>
+<a class="text-[#1b1c1a] dark:text-[#faf9f5] font-medium hover:text-[#ff5c2e] transition-colors duration-300" href="#">Registrate como profesional</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold tracking-tight hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-primary/20" href="#form">
+                Empezar
+            </a>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-6 py-16 md:py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<h1 class="text-5xl md:text-7xl font-[900] tracking-tighter leading-[0.9] mb-6">
+                        Encontrá profesionales del hogar <span class="text-primary">verificados</span>, sin vueltas.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-10 max-w-lg leading-relaxed">
+                        Plomero, electricista, gasista, pintor y más... Conectamos tu necesidad con el experto que buscás, con respaldo garantizado.
+                    </p>
+<a class="hero-gradient inline-flex items-center justify-center text-white text-lg font-bold px-10 py-5 rounded-xl hover:shadow-2xl hover:scale-[1.02] transition-all active:scale-95" href="#form">
+                        Quiero probar Laburito
+                    </a>
+</div>
+<div class="relative">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-fixed-dim/30 rounded-full blur-3xl"></div>
+<div class="relative rounded-[2rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="Técnico trabajando" class="w-full h-[500px] object-cover" data-alt="Modern professional electrician fixing a light panel with high-tech tools in a clean stylish home environment, natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7QXrSZGBuIyot1myXXeyK-VHLTjMxn4aMeMojG7VAUhrK25Jd64lzPj5LfzYKrzODa_8pN9Rl3E0EH7tWhpK2yJwhMZ6rsS7l_YoL-bR5vi34hSyMiZoUWzbh_BL1XyRIJns3MbKt3ppf7woqTo9KBuZZiAsNy_MZNaTogAvWi4A_JpCpCYSLdy8YU_7HZuGoFsr7opXF-4hqskt0pVdHlx4qY4EEfEO9EwEvEBR3VOnwzJ6IsRafUd_QVSPaTMLIIl0BpwIeDlg"/>
+<div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<p class="font-bold text-sm">Mariano R.</p>
+<p class="text-xs text-on-surface-variant">Electricista Matriculado • ★ 4.9</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="bg-surface-container-low py-24 px-6">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl md:text-5xl font-black tracking-tight mb-16 text-center md:text-left">
+                    Contratar un técnico hoy es <br class="hidden md:block"/> un <span class="text-error">dolor de cabeza</span>
+</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-card hover:translate-y-[-8px] transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-error">no_accounts</span>
+</div>
+<h3 class="text-xl font-bold mb-4">¿Quién entra a tu casa?</h3>
+<p class="text-on-surface-variant leading-relaxed">No sabés quién es, si es de confianza o si tiene malas referencias. El miedo a lo desconocido es real.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-card hover:translate-y-[-8px] transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-error">payments</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Precios que cambian</h3>
+<p class="text-on-surface-variant leading-relaxed">Te dicen un número por teléfono y cuando llegan es otro. Sin presupuestos claros ni transparencia.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-card hover:translate-y-[-8px] transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-error">gavel</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Sin garantía</h3>
+<p class="text-on-surface-variant leading-relaxed">Si algo queda mal, desaparecen. No tenés a quién reclamar y el problema sigue ahí.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="py-16 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-wrap justify-center gap-3">
+<span class="px-6 py-3 rounded-full bg-surface-container text-on-surface font-semibold hover:bg-primary-fixed transition-colors cursor-pointer">Plomería</span>
+<span class="px-6 py-3 rounded-full bg-surface-container text-on-surface font-semibold hover:bg-primary-fixed transition-colors cursor-pointer">Electricidad</span>
+<span class="px-6 py-3 rounded-full bg-surface-container text-on-surface font-semibold hover:bg-primary-fixed transition-colors cursor-pointer">Gasista</span>
+<span class="px-6 py-3 rounded-full bg-surface-container text-on-surface font-semibold hover:bg-primary-fixed transition-colors cursor-pointer">Pintura</span>
+<span class="px-6 py-3 rounded-full bg-surface-container text-on-surface font-semibold hover:bg-primary-fixed transition-colors cursor-pointer">Aire Acondicionado</span>
+<span class="px-6 py-3 rounded-full bg-surface-container text-on-surface font-semibold hover:bg-primary-fixed transition-colors cursor-pointer">Carpintería</span>
+<span class="px-6 py-3 rounded-full bg-surface-container text-on-surface font-semibold hover:bg-primary-fixed transition-colors cursor-pointer">Albañilería</span>
+</div>
+</div>
+</section>
+<!-- How it Works -->
+<section class="py-24 px-6 bg-surface-container">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-4xl md:text-5xl font-black mb-16 tracking-tight">Con Laburito, en 3 pasos resolvés</h2>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="relative">
+<div class="text-[8rem] font-black text-outline-variant/20 absolute -top-16 left-1/2 -translate-x-1/2">1</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-bold mb-4">Buscá</h3>
+<p class="text-on-surface-variant">Elegí el servicio que necesitás y mirá los perfiles disponibles cerca tuyo.</p>
+</div>
+</div>
+<div class="relative">
+<div class="text-[8rem] font-black text-outline-variant/20 absolute -top-16 left-1/2 -translate-x-1/2">2</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-bold mb-4">Compará</h3>
+<p class="text-on-surface-variant">Revisá calificaciones, fotos de trabajos reales y precios estimados.</p>
+</div>
+</div>
+<div class="relative">
+<div class="text-[8rem] font-black text-outline-variant/20 absolute -top-16 left-1/2 -translate-x-1/2">3</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-bold mb-4">Contratá tranquilo</h3>
+<p class="text-on-surface-variant">Agendá y pagá de forma segura. Nosotros te cubrimos con garantía.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section (Bento Grid) -->
+<section class="py-24 px-6 bg-surface">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl font-black mb-16 tracking-tight text-center">¿Por qué Laburito?</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-secondary p-10 rounded-card text-white flex flex-col justify-end relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-20">
+<span class="material-symbols-outlined text-[10rem]">verified_user</span>
+</div>
+<h3 class="text-3xl font-black mb-4">Pros Verificados</h3>
+<p class="text-lg opacity-90">Validamos identidad, antecedentes y matrículas de cada profesional en la plataforma.</p>
+<div class="mt-8">
+<span class="bg-white/20 px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">Sello de Confianza Laburito</span>
+</div>
+</div>
+<div class="md:col-span-2 bg-surface-container-high p-8 rounded-card flex flex-col justify-center">
+<h3 class="text-2xl font-bold mb-2">Precios Transparentes</h3>
+<p class="text-on-surface-variant">Sin sorpresas de último momento. Sabés cuánto vas a pagar desde el inicio.</p>
+</div>
+<div class="bg-primary-container p-8 rounded-card text-on-primary-container flex flex-col justify-center">
+<h3 class="text-xl font-bold mb-2">30 días de Garantía</h3>
+<p class="text-sm">Si el trabajo falla, lo arreglamos o te devolvemos el dinero.</p>
+</div>
+<div class="bg-tertiary-fixed p-8 rounded-card text-on-tertiary-fixed flex flex-col justify-center">
+<h3 class="text-xl font-bold mb-2">Reviews Reales</h3>
+<p class="text-sm">Solo usuarios reales que contrataron el servicio pueden opinar.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Lead Capture Form -->
+<section class="py-24 px-6 bg-surface-container-lowest" id="form">
+<div class="max-w-4xl mx-auto bg-surface-container p-8 md:p-16 rounded-[2.5rem] relative shadow-xl overflow-hidden">
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<div class="text-center mb-12">
+<span class="bg-primary-fixed text-on-primary-fixed px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider mb-4 inline-block">Early Access</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mb-4">Sé de los primeros en usar Laburito</h2>
+<p class="text-on-surface-variant text-lg">Dejanos tus datos y te avisamos cuando estemos en tu zona. Prometemos no mandar spam.</p>
+</div>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-bold text-sm ml-2">Nombre completo</label>
+<input class="bg-surface-container-highest border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all outline-none" placeholder="Ej: Juan Pérez" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-bold text-sm ml-2">Celular</label>
+<input class="bg-surface-container-highest border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all outline-none" placeholder="11 1234-5678" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-bold text-sm ml-2">Email</label>
+<input class="bg-surface-container-highest border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all outline-none" placeholder="vos@email.com" type="email"/>
+</div>
+<button class="w-full hero-gradient text-white font-bold py-5 rounded-xl text-lg shadow-xl hover:shadow-primary/30 hover:scale-[1.01] active:scale-95 transition-all" type="submit">
+                            Quiero ser de los primeros
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[32px] bg-surface-container dark:bg-[#1b1c1a] mt-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 w-full max-w-7xl mx-auto">
+<div class="flex flex-col gap-2">
+<div class="font-black text-2xl text-[#1b1c1a] dark:text-[#faf9f5]">Laburito</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">© 2024 Laburito. Hecho en Argentina con confianza.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#b22c00] transition-all underline-offset-4" href="#">Privacidad</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#b22c00] transition-all underline-offset-4" href="#">Términos</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#b22c00] transition-all underline-offset-4" href="#">Contacto</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#b22c00] transition-all underline-offset-4" href="#">Preguntas Frecuentes</a>
+</div>
+<a class="text-[#505b91] font-bold hover:text-[#b22c00] transition-all" href="#">
+                ¿Sos profesional? Registrate
+            </a>
+</div>
+</footer>
+</body></html>
